@@ -20,10 +20,10 @@ interface Option {
 
 export const options: Option[] = [
   {
-    title: "Tawuran",
+    title: "Resto on Train",
     description: "16%",
     information:
-      "Angka tawuran di Indonesia masih menjadi masalah serius, khususnya di kalangan pelajar. Pada tahun 2021, Badan Pusat Statistik (BPS) mencatat bahwa terdapat 188 desa/kelurahan di Indonesia yang menjadi lokasi tawuran pelajar. Provinsi Jawa Barat tercatat sebagai wilayah dengan angka tawuran pelajar tertinggi, yakni di 37 desa/kelurahan, diikuti oleh Sumatera Utara dan Maluku​",
+      "KAI Services memiliki salah satu bidang usaha dengan Core Business On Board Services yang bernama Restaurant On Train, dengan Branding Kuliner Kereta yang bertugas Mengelola dan Melayani penjualan Makan dan Minum di Setiap Perjalanan Kereta Api.​",
     informationLink: "https://jakarta.bps.go.id/id/statistics-table/2/MTE5NCMy/banyaknya-kelurahan-yang-mengalami-perkelahian-massal-disebabkan-keramaian--podes-.html",
     image: "/icon/celurit.png",
     backgroundColor: "#5562AD",
@@ -44,7 +44,7 @@ export const options: Option[] = [
     previewImage: "/tawuran/1.jpeg", 
   },
   {
-    title: "Narkoba",
+    title: "Resparking",
     description: "16%",
     information: "Menurut data dari Badan Narkotika Nasional (BNN), pada tahun 2023, diperkirakan sekitar 3,6 juta orang di Indonesia terlibat dalam penyalahgunaan narkoba. Kelompok usia yang paling rentan adalah 15-35 tahun, menunjukkan bahwa anak muda sangat terpengaruh oleh masalah ini.",
     informationLink: "https://www.cnnindonesia.com/search/?query=narkoba",

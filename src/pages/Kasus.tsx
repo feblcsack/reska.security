@@ -33,7 +33,7 @@ const Kasus = () => {
     <section id="kasus">
       <div className="relative bg-primary-100 pt-20 md:pt-32">
         <div className="overflow-x-hidden">
-          <div className="absolute -top-10 left-1/2 grid w-full -translate-x-1/2 scale-95 grid-cols-6 rounded-2xl bg-primary-300 sm:w-[80%] md:-top-16 md:w-2/3 md:max-w-screen-md md:scale-100">
+          <div className="absolute top-10 mt-10 left-1/2 grid w-full -translate-x-1/2 scale-95 grid-cols-5 rounded-2xl bg-primary-300 sm:w-[80%] md:-top-16 md:w-2/3 md:max-w-screen-md md:scale-100">
             {kasusList.map((kasus, index) => (
               <button
                 key={index}
@@ -61,7 +61,7 @@ const Kasus = () => {
           </div>
 
           <div
-            className="carousel mx-auto h-min w-[95%] overflow-x-hidden rounded-3xl bg-white"
+            className="carousel mx-auto mt-20 h-min w-[95%] overflow-x-hidden rounded-3xl bg-white"
             ref={carouselRef}>
             <div className="swiper-wrapper">
               {/* Slides */}

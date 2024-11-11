@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     if (typedElementRef.current) {
       const typed = new Typed(typedElementRef.current, {
-        strings: ["di Indonesia"],
+        strings: ["Multi Usaha"],
         typeSpeed: 60,
         backSpeed: 30,
         loop: true,
@@ -34,7 +34,7 @@ const Home = () => {
             <h1 className="font-poppins text-2xl font-bold md:text-4xl"
               data-aos="fade-right"
               data-aos-duration="1400">
-              Bagaimana Kasus Kenakalan Remaja {''}
+              Apa itu Reska {''}
               <span ref={typedElementRef} className="bg-yellow text-white transition-all"></span>
               ?
             </h1>
@@ -42,11 +42,7 @@ const Home = () => {
               data-aos="fade-right"
               data-aos-duration="1600"
               className="color py-4 font-poppins text-sm text-secondary-200 md:text-base">
-              Kenakalan remaja adalah wujud dari konflik yang tidak
-              terselesaikan dengan baik pada masa kanak-kanak maupun pada saat
-              remaja. Tingkat kenakalan remaja di Indonesia cukup tinggi. Data
-              UNICEF tahun 2016 menunjukkan bahwa kenakalan pada usia remaja di
-              Indonesia diperkirakan mencapai sekitar 50%.
+              PT Reska Multi Usaha merupakan salah satu anak perusahaan PT Kereta Api Indonesia (Persero) yang berdiri sejak tahun 2003, mempunyai tujuan melaksanakan dan menunjang kebijakan dan program PT Kereta Api Indonesia (Persero) selaku perusahaan induk khususnya usaha restoran kereta api serta usaha lainnya. Pada tanggal 1 Oktober 2020 sesuai dengan peraturan Direksi PT Kereta Api Indonesia (Persero) nomor : PER.U/KO.106/X/1/KA-2020 dilakukan perubahan logo perusahaan menjadi KAI Services.
             </p>
             <button
               className="learn-more relative inline-block h-auto w-48 cursor-pointer border-none bg-transparent align-middle font-radioCasnada text-inherit outline-none"
@@ -63,7 +59,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <!-- accordion section start --> */}
       <div id="wave">
         <img
           src="/svg/wave.svg"

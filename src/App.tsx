@@ -3,6 +3,7 @@ import { Footer } from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Data from "./pages/Data";
+import Directur from "./pages/Directur";
 import Dokumentasi from "./pages/Dokumentasi";
 import Home from "./pages/Home";
 import Kasus from "./pages/Kasus";
@@ -15,7 +16,8 @@ function App() {
       <Navbar />
       <ChatBot/>
       <Home />
-      <About />
+    <Directur/>
+      {/* <About /> */}
       <Kasus />
       <Pengaruh />
       <Data />

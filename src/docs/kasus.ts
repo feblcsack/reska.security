@@ -17,6 +17,7 @@ export const kasusList: Kasus[] = [
       label: "Resto on Train",
       image: "/icon/tawuran.png",
     },
+
   },
   {
     title: "Bersama Lawan Narkoba",

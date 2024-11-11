@@ -1,6 +1,7 @@
 import ChatBot from "./chat-bot";
 import { Footer } from "./components/Footer";
 import Navbar from "./components/Navbar";
+import { Animated } from "./layout/Animated";
 import About from "./pages/About";
 import Data from "./pages/Data";
 import Directur from "./pages/Directur";
@@ -20,6 +21,7 @@ function App() {
       {/* <About /> */}
       <Kasus />
       <Pengaruh />
+      <Animated/>
       {/* <Data /> */}
       <Konsultasi />
       {/* <Dokumentasi /> */}

@@ -20,11 +20,10 @@ function App() {
       {/* <About /> */}
       <Kasus />
       <Pengaruh />
-      <Data />
+      {/* <Data /> */}
       <Konsultasi />
-      <Dokumentasi />
-      <ChatBot/>
-
+      {/* <Dokumentasi /> */}
+      {/* <ChatBot/> */}
       <Footer />
     </>
   );

@@ -13,9 +13,9 @@ interface Option {
   image: string;
   backgroundColor: string;
   height: string;
-  model: JSX.Element; // Allow JSX elements here
+  model: JSX.Element; 
   caseImages: string[];
-  previewImage?: string; // Menambahkan properti ini
+  previewImage?: string; 
 }
 
 export const options: Option[] = [

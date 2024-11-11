@@ -52,6 +52,10 @@ export default function ChatBot() {
       "Jalin hubungan baik dengan keluarga dan teman yang positif.",
       "Ikuti kegiatan yang bermanfaat dan tingkatkan minat di bidang yang Anda sukai.",
     ],
+    "charen": [
+      "Jalin hubungan baik dengan keluarga dan teman yang positif.",
+      "Ikuti kegiatan yang bermanfaat dan tingkatkan minat di bidang yang Anda sukai.",
+    ],
   };
 
   const handleSend = () => {

@@ -1,8 +1,7 @@
-
-import Ganja from "../components/models/Ganja";
-import { Model } from "../components/models/Rokok";
+import { Clean } from "../components/models/Clean";
+import { Park } from "../components/models/Park";
+import { Resto } from "../components/models/Resto";
 import { Security } from "../components/models/Security";
-import { Sign } from "../components/models/Sign";
 import { Kereta } from "../components/models/Train";
 // import ThreeDObject from "./ThreeDObject";
 
@@ -32,7 +31,7 @@ export const options: Option[] = [
     height: "225px",
     model: (
       <>
-        <Kereta/>
+        <Kereta />
       </>
     ),
     caseImages: [
@@ -53,7 +52,7 @@ export const options: Option[] = [
     image: "/narkoba/2.jpeg",
     backgroundColor: "#E33B3B",
     height: "300px",
-    model: <Ganja scale={15} />,
+    model: <Park />,
     caseImages: [
       "/narkoba/1.png",
       "/narkoba/2.jpeg",
@@ -71,8 +70,8 @@ export const options: Option[] = [
     informationLink: "https://www.cnnindonesia.com/search/?query=merokok",
     image: "/path/to/remaja-image.jpg",
     backgroundColor: "#0E9D75",
-    height: "320px",
-    model: <Model />,
+    height: "220px",
+    model: <Resto />,
     caseImages: [
       "/merokok/1.jpg",
       "/merokok/2.jpg",
@@ -110,7 +109,7 @@ export const options: Option[] = [
     image: "/path/to/lansia-image.jpg",
     backgroundColor: "#16AE79",
     height: "220px",
-    model: <Sign />,
+    model: <Clean />,
     caseImages: [
       "/bullying/1.jpg",
       "/bullying/2.jpg",

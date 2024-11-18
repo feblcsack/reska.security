@@ -105,9 +105,9 @@ const Options = ({ onBack }: { onBack: () => void }) => {
 
       <div className="relative z-10 text-center bg-transparent">
         <h1 className="text-4xl font-bold text-secondary mb-2 pt-10 md:py-0">
-          Perilaku <span className="text-yellow">Buruk</span>
+          Layanan <span className="text-yellow">Kami</span>
         </h1>
-        <h2 className="text-xl text-primary">Silahkan Pilih Kasus Kenakalan Remaja</h2>
+        <h2 className="text-xl text-primary">Silahkan Pilih Layanan KAI Services</h2>
       </div>
 
       <div className="relative z-10 px-16 bg-transparent mx-auto max-w-screen-xl flex">

@@ -81,7 +81,6 @@ const ModelCanvas = ({
 
           <directionalLight position={[-10, -30, 20]} intensity={5} />
           <directionalLight position={[-5, 12, -40]} intensity={5} />
-          {/* <Helper/> */}
           {model ? React.cloneElement(model, { isHovered }) : null}
         </Canvas>
       </div>

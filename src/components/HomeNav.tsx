@@ -14,7 +14,7 @@ const Navbar = ({ teamText = "Team", teamLink = "/team" }) => {
   };
 
   // Determine logo based on current path
-  const logoSrc = location.pathname === '/team' ? '/icon/logo-nav.png' : '/icon/logo-footer.png';
+  const logoSrc = location.pathname === '/team' ? '/icon/logo-nav.png' : '/icon/kai2.png';
 
   return (
     <div className="relative z-10 w-full max-w-screen-xl flex flex-wrap items-center bg-none justify-between mx-auto p-4">

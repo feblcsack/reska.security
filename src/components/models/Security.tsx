@@ -1,7 +1,10 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useGLTF } from '@react-three/drei';
+import * as THREE from 'three';
+import { GroupProps } from '@react-three/fiber';
 
-type ModelProps = React.HTMLProps<HTMLElement>;
+// Gunakan tipe yang lebih fleksibel atau mengkonversinya ke `unknown`
+type ModelProps = GroupProps;
 
 interface GLTFModel {
   nodes: {
@@ -13,7 +16,8 @@ interface GLTFModel {
 }
 
 export function Security(props: ModelProps) {
-  const { nodes, materials } = useGLTF('/3D/security.glb') as GLTFModel;
+  // Konversi tipe ke `unknown` terlebih dahulu sebelum casting ke tipe `GLTFModel`
+  const { nodes, materials } = useGLTF('/3D/security.glb') as unknown as GLTFModel;
 
   return (
     <group {...props} dispose={null}>

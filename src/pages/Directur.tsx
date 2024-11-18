@@ -6,7 +6,7 @@ export default function Directur() {
     {
       name: "RIRIN WIDI ASTUTIK",
       role: "Plt. Direktur Utama",
-      image: "bullying/1.jpg",
+      image: "direksi/RU.png",
     },
     {
       name: "DENY EKO ANDRIANTO",

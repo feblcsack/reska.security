@@ -7,6 +7,7 @@ import Kasus from "./pages/Kasus";
 import { HeroParallaxDemo } from "./pages/Parallax";
 import Pengaruh from "./pages/Pengaruh";
 import { Slider } from "./pages/Slider";
+import { View } from "./pages/View";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
       <Navbar />
       <ChatBot />
       <Home />
+      <section className="md:hidden" >
+      <View />
+      </section>
+      
       <Directur />
       {/* <About /> */}
       <Kasus />

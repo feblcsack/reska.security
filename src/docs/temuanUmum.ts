@@ -7,26 +7,26 @@ export const temuanUmum: TemuanUmum[] = [
   {
     title: "Resto on Train",
     description:
-      "Faktor - faktor Terjadinya kenakalan remaja yang sering di temui di sekitar kita yaitu seperti kurangnya pengawasan dari orangtua atau kerabat terdekat yang mengakibatkan terpacunya mental karena adanya pergaulan bebas sehingga menjadi seseorang yang tergolong ke dalam pelaku Kenakalan Remaja, selain itu adanya masalah yang dihadapi oleh pelaku kenakalan remaja seperti masalah keluarga maupun masalah pribadi, serta ketidakstabilan emosional atau mental yang di miliki sehingga terjerumus ke dalam pelaku Kenakalan Remaja",
+      "Resto on Train adalah layanan restoran yang disediakan oleh PT Reska Multi Usaha di dalam kereta api. Fasilitas ini menawarkan pengalaman makan yang nyaman dan praktis bagi penumpang selama perjalanan. Dengan berbagai pilihan menu yang variatif, mulai dari makanan ringan hingga hidangan berat, penumpang dapat menikmati sajian lezat dan bergizi selama perjalanan. Layanan ini juga dilengkapi dengan pelayan yang ramah dan profesional untuk memastikan kenyamanan pelanggan.",
   },
   {
     title: "Resparking",
     description:
-      "Menurut hasil analisis kami terdapat beberapa jenis perilaku kenakalan remaja seperti adanya perilaku kenakalan remaja Tauran antar pelajar, adanya perilaku seseorang yang mengkonsumsi Narkoba atau obat obatan terlarang, serta seseorang yang mengkonsumsi Rokok, adanya remaja yang terlibat perilaku melakukan hubungan intim diluar nikah, serta adanya perilaku Bullying, dan adanya seseorang pengonsumsi Minuman Keras",
+      "Resparking adalah fasilitas penyediaan tempat parkir yang aman dan terkelola dengan baik oleh PT Reska Multi Usaha. Fasilitas ini menyediakan area parkir yang luas dan terorganisir, dengan sistem pengawasan yang ketat untuk memastikan kendaraan yang diparkir tetap aman. Resparking juga didukung dengan teknologi yang memudahkan pengguna dalam mencari dan memarkir kendaraan mereka dengan efisien.",
   },
   {
     title: "Cafe & Catering",
     description:
-      "Pelaku kenakalan remaja berkemungkinan mengalami masalah kesehatan mental dan psikologis. Selain itu, mereka sering kali dijauhi oleh lingkungan sekitarnya, yang dapat membuat mereka semakin sulit diatur dan dinasihati, serta berdampak buruk pada kesehatan psikologis mereka. Pelaku kenakalan remaja juga berpotensi untuk dijauhi oleh orang-orang di sekitarnya, termasuk keluarga, teman, dan masyarakat.",
+      "PT Reska Multi Usaha juga menyediakan layanan Cafe & Catering yang menawarkan berbagai pilihan makanan dan minuman untuk berbagai acara, baik itu pribadi maupun bisnis. Dengan konsep yang modern dan nyaman, pelanggan dapat menikmati makanan berkualitas tinggi yang disajikan dengan pelayanan terbaik. Layanan catering PT Reska juga dapat disesuaikan dengan kebutuhan acara, memberikan berbagai pilihan menu yang dapat dinikmati oleh semua kalangan.",
   },
   {
     title: "Security",
     description:
-      "Menurut hasil analisis kami, terdapat beberapa faktor yang dapat melindungi remaja dari keterlibatan dalam perilaku kenakalan. Faktor-faktor tersebut meliputi adanya dukungan sosial dari orang terdekat, hubungan baik dengan orang tua atau keluarga, partisipasi dalam kegiatan ekstrakurikuler yang positif, serta keterlibatan dalam komunitas keagamaan.",
+      "Fasilitas keamanan dari PT Reska Multi Usaha memastikan bahwa setiap area yang dikelola aman dan terjamin dari segala ancaman. Dengan petugas keamanan yang terlatih dan sistem pengawasan 24 jam, keamanan pelanggan dan properti tetap menjadi prioritas utama. Layanan ini tidak hanya meliputi area stasiun atau kereta, tetapi juga fasilitas lainnya seperti tempat parkir dan ruang publik.",
   },
   {
     title: "Resclean",
     description:
-      "Menurut hasil analisis kami, agar remaja yang terlibat dalam kenakalan remaja dapat menemukan pendekatan intervensi dan pencegahan yang efektif, diperlukan langkah-langkah yang bertujuan untuk mengurangi potensi perilaku kenakalan tersebut. Langkah-langkah tersebut meliputi program pelatihan untuk orang tua guna menjaga kestabilan mental anak, peningkatan akses terhadap layanan kesehatan mental, serta pembangunan keterampilan sosial dan emosional remaja.",
+      "Resclean adalah layanan kebersihan yang disediakan oleh PT Reska Multi Usaha untuk menjaga kebersihan dan kenyamanan di berbagai fasilitas yang mereka kelola. Dengan tim yang terlatih dan menggunakan peralatan modern, Resclean memastikan bahwa area-area seperti kereta api, stasiun, dan fasilitas umum lainnya selalu dalam keadaan bersih dan higienis, mendukung pengalaman yang lebih baik bagi pelanggan.",
   },
 ];

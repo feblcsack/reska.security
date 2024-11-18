@@ -1,28 +1,29 @@
 import ChatBot from "./chat-bot";
 import { Footer } from "./components/Footer";
 import Navbar from "./components/Navbar";
-import { Animated } from "./layout/Animated";
-
 import Directur from "./pages/Directur";
-
 import Home from "./pages/Home";
 import Kasus from "./pages/Kasus";
-import Konsultasi from "./pages/Konsultasi";
+import { HeroParallaxDemo } from "./pages/Parallax";
 import Pengaruh from "./pages/Pengaruh";
+import { Slider } from "./pages/Slider";
 
 function App() {
   return (
     <>
       <Navbar />
-      <ChatBot/>
+      <ChatBot />
       <Home />
-    <Directur/>
+      <Directur />
       {/* <About /> */}
       <Kasus />
       <Pengaruh />
-      <Animated/>
+      <Slider />
+      <HeroParallaxDemo />
+      {/* <Animated/> */}
       {/* <Data /> */}
-      <Konsultasi />
+      {/* <Konsultasi /> */}
+
       {/* <Dokumentasi /> */}
       {/* <ChatBot/> */}
       <Footer />

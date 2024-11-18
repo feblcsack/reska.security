@@ -23,7 +23,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="/icon/logo-nav.png"
+              src="/icon/kai2.png"
               className="h-auto w-[150px]"
               alt="gambar logo"
             />

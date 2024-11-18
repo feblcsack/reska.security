@@ -184,7 +184,7 @@ export default function ChatBot() {
             </form>
           </div>
           <div className="p-2 border-t text-center text-xs text-gray-500">
-            Didukung oleh <span className="text-primary-100 font-bold">Rebel</span>
+            Didukung oleh <span className="text-primary-100 font-bold">RMU</span>
             <span className="text-yellow font-bold">Bot</span>
           </div>
         </DialogContent>

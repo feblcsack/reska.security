@@ -9,7 +9,7 @@ export const Footer = () => {
           <div className="mb-6 flex flex-col justify-between md:mb-0">
             <a href="#home" className="flex items-center">
               <img
-                src="/icon/logo-footer.png"
+                src="/icon/kai2.png"
                 className="me-3 h-auto w-[180px]"
                 alt="FlowBite Logo"
               />
@@ -120,7 +120,7 @@ export const Footer = () => {
         <hr className="my-6 border-gray-700 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-center text-sm text-gray-500">
-            Dibuat oleh tim Rebellum
+            Dibuat oleh tim PKL SMKN 46 Jakarta
           </span>
         </div>
       </div>

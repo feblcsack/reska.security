@@ -4,6 +4,7 @@ import Ganja from "../components/models/Ganja";
 import { Model } from "../components/models/Rokok";
 import { Sex } from "../components/models/Sex";
 import { Sign } from "../components/models/Sign";
+// import ThreeDObject from "./ThreeDObject";
 
 interface Option {
   title: string;
@@ -62,7 +63,7 @@ export const options: Option[] = [
     previewImage: "/narkoba/2.jpeg",
   },
   {
-    title: "Merokok",
+    title: "Cafe & Catering",
     description: "18,8%",
     information: "Data terkait merokok di Indonesia menunjukkan bahwa Indonesia adalah salah satu negara dengan prevalensi perokok tertinggi di dunia. Pada 2022, diperkirakan lebih dari 61,4 juta orang di Indonesia adalah perokok, dengan lebih dari 70% di antaranya adalah laki-laki dewasa. Prevalensi merokok pada remaja juga sangat tinggi, dengan sekitar 20% remaja berusia 13-15 tahun tercatat sebagai perokok aktif.",
     informationLink: "https://www.cnnindonesia.com/search/?query=merokok",
@@ -80,7 +81,7 @@ export const options: Option[] = [
     previewImage: "/merokok/3.jpg",
   },
   {
-    title: "Seksual",
+    title: "Security",
     description: "21,4%",
     information: " Berdasarkan laporan Badan Kependudukan dan Keluarga Berencana Nasional (BKKBN), angka kehamilan di kalangan remaja di Indonesia cukup signifikan. Menurut Survei Demografi dan Kesehatan Indonesia (SDKI) tahun 2017, sekitar 7% perempuan usia 15-19 tahun di Indonesia telah mengalami kehamilan. Hal ini seringkali dikaitkan dengan minimnya pengetahuan tentang kesehatan reproduksi dan perilaku seksual yang tidak aman.",
     informationLink: "https://www.cnnindonesia.com/search/?query=seksual",
@@ -98,7 +99,7 @@ export const options: Option[] = [
     previewImage: "/seksual/3.jpg",
   },
   {
-    title: "Bullying",
+    title: "Resclean",
     description: "41,1%",
     information: "Data mengenai bullying di Indonesia menunjukkan bahwa praktik ini masih menjadi masalah serius, terutama di kalangan remaja dan pelajar. Menurut survei dari Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi, serta beberapa lembaga swadaya masyarakat, prevalensi bullying di lingkungan sekolah cukup tinggi.",
     informationLink: "https://www.cnnindonesia.com/search/?query=bullying",
@@ -115,22 +116,4 @@ export const options: Option[] = [
     ],
     previewImage: "/bullying/4.jpg",
   },
-  {
-    title: "Mabok",
-    description: "8,1%",
-    information: "Menurut survei dari Badan Narkotika Nasional (BNN), ada tren yang mengkhawatirkan mengenai konsumsi alkohol di kalangan remaja. Data menunjukkan bahwa sekitar 14,4% remaja di kota-kota besar pernah mengonsumsi alkohol, dengan sebagian besar melaporkan pernah mengalami mabuk akibat konsumsi berlebihan.",
-    informationLink: "https://www.bps.go.id/id/statistics-table/2/MTQ3NSMy/konsumsi-alkohol...",
-    image: "/path/to/lansia-image.jpg",
-    backgroundColor: "#16AE79",
-    height: "320px",
-    model: <Botol scale={4} />,
-    caseImages: [
-      "/mabok/1.jpg",
-      "/mabok/2.jpg",
-      "/mabok/3.jpg",
-      "/mabok/4.jpg",
-      "/mabok/5.jpeg",
-    ],
-    previewImage: "/mabok/5.jpeg",
-  },
-];
+]

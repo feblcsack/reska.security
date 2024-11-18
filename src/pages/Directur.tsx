@@ -6,22 +6,22 @@ export default function Directur() {
     {
       name: "RIRIN WIDI ASTUTIK",
       role: "Plt. Direktur Utama",
-      image: "/public/direksi/RU.png",
+      image: "direksi/RU.png",
     },
     {
       name: "DENY EKO ANDRIANTO",
       role: "Plt. Direktur Keuangan dan Administrasi",
-      image: "/public/direksi/rk_04.png",
+      image: "direksi/rk_04.png",
     },
     {
       name: "BAMBANG SULIASTOWO",
       role: "Direktur Operasi",
-      image: "/public/direksi/ro_03.png",
+      image: "direksi/ro_03.png",
     },
     {
       name: "LIES PERMANA LESTARI",
       role: "Direktur Consumer Business",
-      image: "/public/direksi/RC3.png",
+      image: "direksi/RC3.png",
     },
   ];
 
@@ -29,12 +29,12 @@ export default function Directur() {
     {
       name: "LATIEF NURBANA",
       role: "Komisaris",
-      image: "/public/direksi/Bpk-Latief.png",
+      image: "direksi/Bpk-Latief.png",
     },
     {
         name: "REVIANDI",
         role: "Komisaris Independen",
-        image: "/public/direksi/komisaris_independen.png",
+        image: "direksi/komisaris_independen.png",
       },
   ];
 

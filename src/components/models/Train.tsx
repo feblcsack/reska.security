@@ -1,4 +1,4 @@
-import React from 'react';
+
 import * as THREE from "three";
 import { useGLTF } from '@react-three/drei'; // Mengimpor useGLTF
 import { Mesh } from 'three';

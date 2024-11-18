@@ -1,4 +1,4 @@
-import Celurit from "../components/models/Celurit";
+
 import Ganja from "../components/models/Ganja";
 import { Model } from "../components/models/Rokok";
 import { Security } from "../components/models/Security";

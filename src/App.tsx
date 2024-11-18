@@ -2,10 +2,9 @@ import ChatBot from "./chat-bot";
 import { Footer } from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Animated } from "./layout/Animated";
-import About from "./pages/About";
-import Data from "./pages/Data";
+
 import Directur from "./pages/Directur";
-import Dokumentasi from "./pages/Dokumentasi";
+
 import Home from "./pages/Home";
 import Kasus from "./pages/Kasus";
 import Konsultasi from "./pages/Konsultasi";

@@ -3,15 +3,15 @@ import { useState, useEffect, useRef } from "react";
 const Dialog = () => {
   const dialogs = [
     {
-      text: "Halo Selamat datang di website Rebellum",
-      audio: "/audio/datang.mp3",
+      text: "Halo! Selamat datang di website Reska multi usaha",
+      audio: "/audio/reska.mp3",
       mascot: "/icon/maskot.webp",
       fallbackMascot: "/icon/maskot.webp",
       duration: 10000,
     },
     {
-      text: "Silahkan pilih kategori kenakalan remaja yang telah kami sediakan",
-      audio:  "/audio/akhir.mp3",
+      text: "Berikut adalah 5 layanan dari reska multi usaha",
+      audio:  "/audio/rmu.mp3",
       mascot: "/icon/maskot.webp",
       fallbackMascot: "/icon/maskot.webp",
     },

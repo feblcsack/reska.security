@@ -30,81 +30,42 @@ export function Dampak() {
       style={{ transform: "translateX(-500px)" }}
     >
       <h2 className="mb-5 text-center text-2xl font-semibold">
-        Dampak Kenakalan Remaja
+      Layanan Utama
       </h2>
       <Accordion collapseAll>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Tawuran)</Accordion.Title>
+          <Accordion.Title>Kebersihan (Resclean)</Accordion.Title>
           <Accordion.Content>
             <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Terjadinya kerusakan fisik</li>
-              <li className="mb-2 text-gray-500">Kegagalan bidang akademik</li>
-              <li className="mb-2 text-gray-500">Tumbuh rasa kriminalitas</li>
-              <li className="mb-2 text-gray-500">Mempunyai kepribadian Tempramen</li>
-              <li className="mb-2 text-gray-500">Menyebabkan kerugian sosial</li>
+            Layanan kebersihan ini mencakup pembersihan gedung, area publik, dan fasilitas transportasi seperti kereta api dan stasiun. Dengan standar operasional yang ketat, Resclean memastikan setiap sudut bersih dan higienis. Juga tersedia layanan pembersihan khusus untuk kebutuhan tertentu, seperti event atau lokasi dengan tingkat lalu lintas tinggi.
             </ul>
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Narkoba)</Accordion.Title>
+          <Accordion.Title>Keamanan (Security)</Accordion.Title>
           <Accordion.Content>
             <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Terjadinya kerusakan fisik</li>
-              <li className="mb-2 text-gray-500">Mendapat gangguan mental</li>
-              <li className="mb-2 text-gray-500">Pelanggaran terhadap hukum</li>
-              <li className="mb-2 text-gray-500">Rusaknya hubungan sosial</li>
-              <li className="mb-2 text-gray-500">Beresiko overdosis hingga menyebabkan kematian</li>
+            Layanan ini menyediakan tenaga keamanan yang terlatih melalui program seperti pelatihan Gada Pratama. Tim keamanan bertanggung jawab atas pengawasan, patroli, dan penerapan sistem keamanan modern di berbagai fasilitas. Fokus utama adalah memberikan rasa aman dengan pendekatan 3B: Brain, Brave, Behavior.
             </ul>
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Merokok)</Accordion.Title>
+          <Accordion.Title>Restoran (Resto On Train)</Accordion.Title>
           <Accordion.Content>
             <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Mengurangi Kreatifitas</li>
-              <li className="mb-2 text-gray-500">Menyebabkan ketergantungan emosional</li>
-              <li className="mb-2 text-gray-500">Mengalami gangguan pernafasan</li>
-              <li className="mb-2 text-gray-500">Meningkatkan resiko kanker</li>
-              <li className="mb-2 text-gray-500">Gangguan kesehatan gigi</li>
+            Menyajikan pengalaman kuliner di perjalanan kereta dengan menu yang bervariasi dan berkualitas tinggi. Restoran dan kafe yang dikelola menawarkan konsep unik, seperti kafe bertema kereta, dengan hidangan yang memadukan cita rasa lokal dan internasional.
             </ul>
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Seksual)</Accordion.Title>
+          <Accordion.Title>Cafe & Catering</Accordion.Title>
           <Accordion.Content>
             <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Terjadinya pernikahan dini</li>
-              <li className="mb-2 text-gray-500">Tertularnya penyakit HIV</li>
-              <li className="mb-2 text-gray-500">Pengguguran / aborsi</li>
-              <li className="mb-2 text-gray-500">Menurunnya kinerja otak</li>
-              <li className="mb-2 text-gray-500">Timbulnya konflik internal</li>
+            Menyediakan layanan catering untuk acara-acara khusus seperti pernikahan, seminar, atau gathering perusahaan. Reska menawarkan berbagai pilihan menu mulai dari prasmanan hingga bento, disesuaikan dengan kebutuhan pelanggan, dengan fokus pada kualitas dan presentasi makanan.
             </ul>
           </Accordion.Content>
         </Accordion.Panel>
-        <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Bullying)</Accordion.Title>
-          <Accordion.Content>
-            <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Berdampak pada psikologis dan emosional</li>
-              <li className="mb-2 text-gray-500">Rusaknya kesehatan mental</li>
-              <li className="mb-2 text-gray-500">Penurunan pada prestasi akademik</li>
-              <li className="mb-2 text-gray-500">Cedera yang dimiliki korban</li>
-              <li className="mb-2 text-gray-500">Mengalami isolasi sosial</li>
-            </ul>
-          </Accordion.Content>
-        </Accordion.Panel>
-        <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Miras)</Accordion.Title>
-          <Accordion.Content>
-            <ul className="mb- ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Terjadinya kerusakan fisik</li>
-              <li className="mb-2 text-gray-500">Gangguan koordinasi pada tubuh</li>
-              <li className="mb-2 text-gray-500">Penurunan daya tangkap</li>
-              <li className="mb-2 text-gray-500">Hilangnya fokus belajar</li>
-              <li className="mb-2 text-gray-500">Jatuh kedalam rasa depresi</li>
-            </ul>
-          </Accordion.Content>
-        </Accordion.Panel>
+        
       </Accordion>
     </div>
   );

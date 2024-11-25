@@ -83,7 +83,7 @@ const Kasus = () => {
                         <img
                           loading="lazy"
                           src={kasus.image}
-                          className="mx-auto h-full max-h-full w-auto"
+                          className="mx-auto h-full rounded-lg max-h-full w-auto"
                           alt={`${kasus.button.label} image`}
                         />
                       </div>

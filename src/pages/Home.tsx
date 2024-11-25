@@ -3,6 +3,7 @@ import toggleAccordion from "../func/accordion";
 import Sabit from "../components/Sabit";
 import Typed from 'typed.js';
 import { useEffect, useRef } from "react";
+import Train from "../components/Kereta";
 
 const Home = () => {
   const temuanUmumList: TemuanUmum[] = temuanUmum;
@@ -54,7 +55,7 @@ const Home = () => {
             </button>
           </div>
           <div className="relative flex md:w-1/2 h-full items-center justify-center -ml-4 md:px-4">
-            <Sabit />
+            <Train/>
           </div>
         </div>
       </div>

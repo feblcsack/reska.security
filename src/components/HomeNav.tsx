@@ -24,7 +24,7 @@ const Navbar = ({ teamText = "Team", teamLink = "/team" }) => {
       <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
         <button
           onClick={handleNavigation}
-          className="text-white bg-yellow/80 hover:bg-secondary/90 font-medium rounded-lg text-sm px-8 py-2 text-center"
+          className="text-white hidden bg-yellow/80 hover:bg-secondary/90 font-medium rounded-lg text-sm px-8 py-2 text-center"
         >
           {teamText}
         </button>

@@ -29,7 +29,7 @@ const Plane = () => {
     }, []);
   return (
     <img
-      src="/icon/pesawat.png"
+      src="/icon/plane.png"
       loading="eager"
       className="pesawat-parallax"
       alt="pesawat"

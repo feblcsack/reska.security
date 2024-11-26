@@ -97,69 +97,32 @@ export function Solusi() {
       className="block md:relative -right-14 md:-right-32 w-full rounded-lg border px-5 py-5 shadow-lg md:w-[400px] transition ease-out duration-150"
     >
       <h2 className="mb-5 text-center text-2xl font-semibold">
-        Solusi Kenakalan Remaja
+        Fitur Unggulan
       </h2>
       <Accordion collapseAll>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Tawuran)</Accordion.Title>
+          <Accordion.Title>Pengalaman dan Profesionalisme</Accordion.Title>
           <Accordion.Content>
-            <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Meningkatkan kesadaran diri</li>
-              <li className="mb-2 text-gray-500">Melakukan pendekatan restoratif</li>
-              <li className="mb-2 text-gray-500">Melibatkan keluarga dalam penyelesaian</li>
-              <li className="mb-2 text-gray-500">Menerapkan hukum yang sesuai</li>
-              <li className="mb-2 text-gray-500">Meningkatkan pengawasan di setiap daerah</li>
-            </ul>
+          Dengan lebih dari 21 tahun pengalaman, Reska Multi Usaha terus berinovasi untuk memberikan pelayanan terbaik. Setiap aspek layanan dijalankan dengan dedikasi tinggi, didukung oleh tenaga kerja yang profesional dan berkompeten.
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Narkoba)</Accordion.Title>
+          <Accordion.Title>Layanan Terintegrasi</Accordion.Title>
           <Accordion.Content>
-            <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Mempelajari dampak dari penggunaan narkoba</li>
-              <li className="mb-2 text-gray-500">
-                Membuat prinsip yang kuat pada diri sendiri supaya tidak sedikitpun menyentuh narkoba
-              </li>
-              <li className="mb-2 text-gray-500">
-                Melakukan konsisten olahraga, agar semakin mengerti pentingnya kesehatan
-              </li>
-              <li className="mb-2 text-gray-500">Lebih meyakinkan diri lagi dengan larangan-larangan kitab suci</li>
-              <li className="mb-2 text-gray-500">
-                Menumbuhkan rasa untuk menolong sesama melalui konseling atau bantuan grup
-              </li>
-            </ul>
+          Semua layanan—dari kebersihan hingga katering—dirancang untuk saling melengkapi. Pendekatan ini memastikan pelanggan mendapatkan solusi lengkap yang efisien dan efektif, baik untuk individu maupun perusahaan.
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Merokok)</Accordion.Title>
+          <Accordion.Title>Pelatihan Karyawan</Accordion.Title>
           <Accordion.Content>
-            <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">Menggunakan media sosial untuk edukasi</li>
-              <li className="mb-2 text-gray-500">
-                Melakukan pendampingan dengan teman yang lebih tahu bahaya merokok
-              </li>
-              <li className="mb-2 text-gray-500">Menggunakan berbagai metode untuk berhenti merokok</li>
-              <li className="mb-2 text-gray-500">Meningkatkan pengawasan yang ketat untuk pencegahan lebih dini</li>
-              <li className="mb-2 text-gray-500">Mengajak masyarakat untuk peduli dan tahu dampak negatifnya</li>
-            </ul>
+          Semua karyawan, termasuk tenaga keamanan dan tim kebersihan, secara rutin mengikuti pelatihan untuk meningkatkan kompetensi mereka. Program pelatihan ini meliputi standar operasional, hospitality, dan penguasaan teknologi terbaru.
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Perilaku Buruk (Seksual)</Accordion.Title>
+          <Accordion.Title>Testimoni Pelanggan</Accordion.Title>
           <Accordion.Content>
-            <ul className="mb-2 ml-2 list-decimal text-gray-500">
-              <li className="mb-2 text-gray-500">
-                Melakukan edukasi lebih mendalam terhadap dampak dan akibatnya
-              </li>
-              <li className="mb-2 text-gray-500">
-                Meningkatkan rasa tanggung jawab dan kesadaran sosial di masyarakat
-              </li>
-              <li className="mb-2 text-gray-500">
-                Menyediakan sarana konsultasi untuk remaja yang mungkin terdampak
-              </li>
-              <li className="mb-2 text-gray-500">Menjadi role model untuk remaja dalam menjalani hidup dengan sehat</li>
-              <li className="mb-2 text-gray-500">Melakukan kampanye kesadaran untuk pengaruh media sosial</li>
-            </ul>
+          "Layanan Reska sangat profesional dan memuaskan. Kebersihan stasiun terjaga, dan pengalaman kuliner di kereta luar biasa!" – Rina, pelanggan setia.
+          "Tim keamanan Reska sangat membantu dan selalu siap sedia." – Dani, mitra bisnis.
           </Accordion.Content>
         </Accordion.Panel>
       </Accordion>

@@ -19,10 +19,8 @@ interface ModelCanvasProps {
 const ModelCanvas = ({
   model,
   title,
-  description,
   backgroundColor,
   titleColor = "black",
-  descriptionColor = "gray",
   width = "300px",
   height = "300px",
   href = "#",
@@ -92,9 +90,9 @@ const ModelCanvas = ({
             style={{ color: titleColor }}>
             {title}
           </h2>
-          <p className="text-white/80" style={{ color: descriptionColor }}>
+          {/* <p className="text-white/80" style={{ color: descriptionColor }}>
             Persentase <span className="font-semibold">{description}</span>
-          </p>
+          </p> */}
         </div>
         <a
           href={href}

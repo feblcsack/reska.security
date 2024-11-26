@@ -10,7 +10,7 @@ export default function Directur() {
     },
     {
       name: "DENY EKO ANDRIANTO",
-      role: "Plt. Direktur Keuangan dan Administrasi",
+      role: "Plt. Direktur Keuangan Fdan Administrasi",
       image: "direksi/rk_04.png",
     },
     {

@@ -5,15 +5,15 @@ const Dialog = () => {
     {
       text: "Halo! Selamat datang di website Reska multi usaha",
       audio: "/audio/reska.mp3",
-      mascot: "/icon/maskot.webp",
-      fallbackMascot: "/icon/maskot.webp",
+      mascot: "/icon/reska.jpg",
+      fallbackMascot: "/icon/reska.jpg",
       duration: 10000,
     },
     {
       text: "Berikut adalah 5 layanan dari reska multi usaha",
       audio:  "/audio/rmu.mp3",
-      mascot: "/icon/maskot.webp",
-      fallbackMascot: "/icon/maskot.webp",
+      mascot: "/icon/reska.jpg",
+      fallbackMascot: "/icon/reska.jpg",
     },
   ];
 

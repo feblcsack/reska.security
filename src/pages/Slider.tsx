@@ -4,7 +4,7 @@ export function Slider() {
   return (
     <InfiniteSlider durationOnHover={75} gap={24}>
       <img
-        src='https://i.scdn.co/image/ab67616d00001e02ad24c5e36ddcd1957ad35677'
+        src='/berita/1.jpeg'
         alt='Dean blunt - Black Metal 2'
         className='aspect-square w-[120px] rounded-[4px]'
       />

@@ -1,6 +1,14 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import {
+  collection,
+  addDoc,
+  query,
+  onSnapshot,
+  orderBy,
+} from "firebase/firestore";
+import { db } from "./firebaseConfig"; // Import konfigurasi Firebase
 import {
   Dialog,
   DialogContent,
@@ -11,95 +19,69 @@ import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { ScrollArea } from "./components/ui/scroll-area";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
-import { Send } from "lucide-react";
 
-interface Message {
-  sender: "user" | "bot";
+interface Comment {
+  id: string;
+  sender: string;
   content: string;
+  timestamp: number;
 }
 
-export default function ChatBot() {
+export default function CommentSystem() {
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([
-    { sender: "bot", content: "Halo! 👋 Anda bisa bertanya dengan keyword seperti: kenakalan remaja, narkoba, atau cara menghindari narkoba." },
-    {
-      sender: "user",
-      content:
-        "Halo! Saya ingin menanyakan beberapa pertanyaan mengenai kenakalan remaja",
-    },
-    { sender: "bot", content: "Silahkan kirim pertanyaan kamu sesuai keyword dan jangan lupa gulir " },
-  ]);
+  const [comments, setComments] = useState<Comment[]>([]);
   const [input, setInput] = useState("");
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
-  // Automatically scroll to the latest message when the message list changes
+  // Load comments from Firestore
   useEffect(() => {
-    if (scrollAreaRef.current) {
-      scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
-    }
-  }, [messages]);
+    const q = query(
+      collection(db, "comments"),
+      orderBy("timestamp", "asc") // Sort comments by timestamp
+    );
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const commentsData: Comment[] = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        sender: doc.data().sender,
+        content: doc.data().content,
+        timestamp: doc.data().timestamp,
+      }));
+      setComments(commentsData);
 
-  const responses: { [key: string]: string[] } = {
-    "kenakalan remaja": [
-      "Kenakalan remaja sering kali disebabkan oleh tekanan teman sebaya.",
-      "Banyak faktor yang bisa memengaruhi, termasuk masalah keluarga.",
-    ],
-    "narkoba": [
-      "Narkoba adalah zat yang dapat mempengaruhi sistem saraf dan perilaku.",
-      "Ada berbagai jenis narkoba, seperti ganja, kokain, dan lainnya.",
-    ],
-    "cara menghindari narkoba": [
-      "Jalin hubungan baik dengan keluarga dan teman yang positif.",
-      "Ikuti kegiatan yang bermanfaat dan tingkatkan minat di bidang yang Anda sukai.",
-    ],
-    "charen": [
-      "Jalin hubungan baik dengan keluarga dan teman yang positif.",
-      "Ikuti kegiatan yang bermanfaat dan tingkatkan minat di bidang yang Anda sukai.",
-    ],
-  };
-
-  const handleSend = () => {
-    if (input.trim()) {
-      setMessages((prev) => [...prev, { sender: "user", content: input }]);
-      const userMessage = input.toLowerCase();
-      setInput("");
-
-      let botResponse = "Maaf, saya tidak mengerti pertanyaan Anda. Silakan coba lagi.";
-      
-      for (const key in responses) {
-        if (userMessage.includes(key)) {
-          const randomIndex = Math.floor(Math.random() * responses[key].length);
-          botResponse = responses[key][randomIndex];
-          break; // Keluar dari loop setelah menemukan jawaban yang cocok
-        }
+      // Scroll to the latest comment
+      if (scrollAreaRef.current) {
+        scrollAreaRef.current.scrollTop =
+          scrollAreaRef.current.scrollHeight;
       }
+    });
 
-      setTimeout(() => {
-        setMessages((prev) => [
-          ...prev,
-          {
-            sender: "bot",
-            content: botResponse,
-          },
-        ]);
+    return () => unsubscribe();
+  }, []);
 
-        // Scroll ke area terbaru setelah mengupdate pesan
-        if (scrollAreaRef.current) {
-          scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
-        }
-      }, 1000);
+  const handleSend = async () => {
+    if (input.trim()) {
+      try {
+        await addDoc(collection(db, "comments"), {
+          sender: "User",
+          content: input.trim(),
+          timestamp: Date.now(), // Add timestamp for sorting
+        });
+        setInput(""); // Clear input field after sending
+      } catch (error) {
+        console.error("Error adding comment: ", error);
+      }
     }
   };
 
   const handleOpen = () => {
     setIsOpen(true);
 
-    // Scroll to the bottom when the chat is first opened
+    // Scroll to the bottom when the comment section is opened
     setTimeout(() => {
       if (scrollAreaRef.current) {
         scrollAreaRef.current.scrollTop = scrollAreaRef.current.scrollHeight;
       }
-    }, 300); // A little delay to make sure the chat content is fully loaded
+    }, 300);
   };
 
   return (
@@ -124,38 +106,38 @@ export default function ChatBot() {
         </svg>
       </Button>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className={`scale-75 md:scale-90 sm:max-w-[400px] p-5 mt-0 overflow-hidden bg-white z-[99999] ${isOpen ? 'slide-in' : ''}`}>
+        <DialogContent className={`scale-75 md:scale-90 sm:max-w-[400px] p-5 mt-0 overflow-hidden bg-white z-[99999] ${isOpen ? "slide-in" : ""}`}>
           <DialogHeader className="p-4 border-b">
             <div className="flex items-center">
               <Avatar className="h-10 w-10 mr-3">
                 <AvatarImage src="/icon/avatar.png" />
-                <AvatarFallback>RB</AvatarFallback>
+                <AvatarFallback>CM</AvatarFallback>
               </Avatar>
               <div>
                 <DialogTitle>
-                  <span className="text-primary-100 font-bold">Rebel</span>
-                  <span className="text-yellow font-bold">Bot</span>
+                  <span className="text-primary-100 font-bold">Comment</span>
+                  <span className="text-yellow font-bold">System</span>
                 </DialogTitle>
-                <p className="text-sm text-gray-500">Online</p>
+                <p className="text-sm text-gray-500">Tulis komentar Anda di sini</p>
               </div>
             </div>
           </DialogHeader>
           <ScrollArea className="h-[350px] p-4 bg-white overflow-y-auto" ref={scrollAreaRef}>
-            {messages.map((message, index) => (
+            {comments.map((comment) => (
               <div
-                key={index}
+                key={comment.id}
                 className={`flex ${
-                  message.sender === "user" ? "justify-end" : "justify-start"
+                  comment.sender === "User" ? "justify-end" : "justify-start"
                 } mb-4`}
               >
                 <div
                   className={`max-w-[80%] p-3 rounded-lg ${
-                    message.sender === "user"
+                    comment.sender === "User"
                       ? "bg-primary-100 text-white"
                       : "bg-gray-100"
                   }`}
                 >
-                  {message.content}
+                  {comment.content}
                 </div>
               </div>
             ))}
@@ -170,7 +152,7 @@ export default function ChatBot() {
             >
               <Input
                 className="flex-grow"
-                placeholder="Tuliskan Pesan..."
+                placeholder="Tulis komentar..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
               />
@@ -179,13 +161,26 @@ export default function ChatBot() {
                 size="icon"
                 className="scale-150 text-primary-100"
               >
-                <Send className="h-4 w-4" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="h-4 w-4"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14.752 11.168l-4.586 2.597a1 1 0 01-1.49-.868v-5.194a1 1 0 011.49-.868l4.586 2.597a1 1 0 010 1.736z"
+                  />
+                </svg>
               </Button>
             </form>
           </div>
           <div className="p-2 border-t text-center text-xs text-gray-500">
             Didukung oleh <span className="text-primary-100 font-bold">RMU</span>
-            <span className="text-yellow font-bold">Bot</span>
+            <span className="text-yellow font-bold">Comment</span>
           </div>
         </DialogContent>
       </Dialog>

@@ -9,7 +9,7 @@ export function Slider() {
         className='aspect-square w-[120px] rounded-[4px]'
       />
       <img
-        src='https://i.scdn.co/image/ab67616d00001e02af73f776b92d4614152fb141'
+        src='/slider/1.webp'
         alt='Jungle Jack - JUNGLE DES ILLUSIONS VOL 2'
         className='aspect-square w-[120px] rounded-[4px]'
       />

@@ -15,16 +15,19 @@ function App() {
       <Navbar />
       <ChatBot />
       <Home />
-      <section className="md:hidden" >
-      <View />
+      <section className="md:hidden">
+        <View />
       </section>
-      
+
       <Directur />
       {/* <About /> */}
       <Kasus />
       <Pengaruh />
       <Slider />
-      <HeroParallaxDemo />
+      <section id="berita">
+        <HeroParallaxDemo />
+      </section>
+
       {/* <Animated/> */}
       {/* <Data /> */}
       {/* <Konsultasi /> */}

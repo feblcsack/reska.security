@@ -62,20 +62,20 @@ const Navbar = () => {
                   Beranda
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   id="nav-about"
                   href="#about"
                   className="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:opacity-0 before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:before:opacity-100 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
                   Tentang
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   id="nav-kasus"
                   href="#kasus"
                   className="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:opacity-0 before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:before:opacity-100 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
-                  Kasus
+                  Layanan
                 </a>
               </li>
               <li>
@@ -83,20 +83,20 @@ const Navbar = () => {
                   id="nav-pengaruh"
                   href="#pengaruh"
                   className="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:opacity-0 before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:before:opacity-100 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
-                  Pengaruh
+                  Fitur
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   id="nav-data"
                   href="#data"
                   className="relative block rounded px-3 py-2 text-gray-900 before:absolute before:-bottom-2 before:left-0 before:h-[2.5px] before:w-full before:scale-x-0 before:bg-current before:opacity-0 before:transition before:content-[''] hover:bg-gray-100 hover:before:scale-x-100 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:before:opacity-100 md:hover:bg-transparent md:hover:text-primary-100 md:dark:hover:bg-transparent md:dark:hover:text-blue-500">
                   Data
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="#dokumentasi"
+                  href="#berita"
                   className="block rounded rounded-l-full rounded-r-full bg-primary-100 px-5 py-2 text-white transition-colors hover:bg-primary-200">
                   Dokumentasi
                 </a>
